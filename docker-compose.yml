@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  video_info_gpt:
+    build:
+      context: .
+      args:
+        STREAMLIT_EMAIL: huipign192@gmail.com
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env

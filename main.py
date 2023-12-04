@@ -47,7 +47,7 @@ def display_chat_history(chain):
 
     if 'initial_message_displayed' not in st.session_state:
         # 显示初始消息
-        initial_question = "50文字以内で、file sizeとlevelを含め、動画の情報を要約してください。"
+        initial_question = "100文字以内で、サイズとlevelを含め、詳細の動画の情報を要約してください。"
         answer = chain.run(initial_question)
         # 添加到聊天历史
         st.session_state.messages.append({"role": "assistant", "content": answer})
